@@ -23,7 +23,7 @@ Two commands are available:
 
 Will output the number of days you worked from home between two dates.
 
-`work hours --from="" --to=""
+`work hours --from="YYYY-MM-DD" --to="YYYY-MM-DD"`
 
 Will output the average number of hours worked between two dates.
 
