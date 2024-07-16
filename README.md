@@ -4,10 +4,10 @@ A program to analyse a directory of worklogs;
 2. In the format:
 
 ```
-| Date    | {{date}}       |
+| Date    | YYYY-MM-DD     |
 | ------- | -------------- |
-| Start   | {{time}}       |
-| Finish  |                |
+| Start   | 05:00          |
+| Finish  | 15:00          |
 | WFH     | y              |
 | Standup | Standup notes  |
 | Note    |                |
@@ -17,15 +17,16 @@ A program to analyse a directory of worklogs;
 - [ ] Items here
 ```
 
-Two commands are available:
+# Usage
 
-`work wfh --from="YYYY-MM-DD" --to="YYYY-MM-DD"`
+`work --from="YYYY-MM-DD" --to="YYYY-MM-DD"`
 
-Will output the number of days you worked from home between two dates.
+Will output:
 
-`work hours --from="YYYY-MM-DD" --to="YYYY-MM-DD"`
+1. The number of days you worked from home
+2. The average number of hours worked per day
 
-Will output the average number of hours worked between two dates.
+NOTE: `from` is inclusive and `to` is exclusive
 
 # Development
 
